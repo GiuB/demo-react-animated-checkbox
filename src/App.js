@@ -6,7 +6,7 @@ import { useWindowSize } from './hooks'
 
 export default function App() {
   const windowSize = useWindowSize()
-  const arrowOutside = windowSize?.width >= 992
+  const arrowOutside = windowSize?.width >= 1160
 
   return (
     <>
