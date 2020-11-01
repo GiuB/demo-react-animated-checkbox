@@ -8,11 +8,12 @@ export const CardWrapper = styled.div.attrs((props) => ({}))`
   padding: 0.2rem;
   border-radius: 1rem;
   background-color: #544855;
-  box-shadow: 0 0.2rem 0.5rem #bbb;
+  transition: all 0.24s ease-out;
   background: linear-gradient(to right, #ac56b2, #de92f2);
 
   &:hover {
     cursor: pointer;
+    box-shadow: 0 0.7rem 1rem rgb(0, 0, 0, 0.2);
 
     .details {
       padding-right: 2.5rem !important;

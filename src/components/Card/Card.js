@@ -7,6 +7,7 @@ import Bottle from '../../assets/img/bottle.png'
 const Card = () => {
   const [state, setState] = useState({ isHover: false })
   const refWrapper = useRef()
+  const refRotateWrapper = useRef()
   const x = useMotionValue(200)
   const y = useMotionValue(200)
 
@@ -34,12 +35,16 @@ const Card = () => {
     state.isHover && setState({ ...state, isHover: false })
     x.set(0)
     y.set(0)
+
+    if (refRotateWrapper?.current?.style)
+      refRotateWrapper.current.style.transition = 'all 0.3s ease-out'
   }
 
   return (
     <C.CardOuterWrapper>
       <motion.div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
         <motion.div
+          ref={refRotateWrapper}
           className="rotateWrapper"
           style={{
             perspective: 1000,
@@ -55,7 +60,7 @@ const Card = () => {
                 </C.CardBox>
                 <C.CardBox descCol isHover={state.isHover}>
                   <div className="title">
-                    <h3>Fabulous Wine</h3>
+                    <h3>Delicious Wine</h3>
                   </div>
                   <div className="tags">
                     <C.CardTag>prod</C.CardTag>
