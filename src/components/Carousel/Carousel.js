@@ -21,10 +21,8 @@ const Carousel = (props, ref) => {
   const {
     id,
     items,
-    value,
     onClick,
     arrowOutside,
-    containerClassName,
     swiperSlideProps,
     swiperWrapperProps,
   } = props
