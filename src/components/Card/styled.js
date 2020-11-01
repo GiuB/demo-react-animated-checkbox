@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import theme from '../../assets/theme'
-
 export const CardOuterWrapper = styled.div.attrs((props) => ({}))``
 
 export const CardWrapper = styled.div.attrs((props) => ({}))`

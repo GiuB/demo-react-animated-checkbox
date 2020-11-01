@@ -1,3 +1,8 @@
+/**
+ * Card
+ * @description: Card Carousel Item Demo with 3d effect onHover
+ * @author: Daniele Covallero <web@giub.it>
+ **/
 import React, { useRef, useState, useEffect } from 'react'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 

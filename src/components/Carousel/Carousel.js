@@ -1,10 +1,10 @@
 /**
  * Carousel
- * @description: Custom swiper field
- * @author: Daniele Covallero <daniele.covallero@efesto.studio>
+ * @description: Carousel component
+ * @author: Daniele Covallero <web@giub.it>
  **/
+import React from 'react'
 import { omit as _omit } from 'lodash'
-import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import { PropTypes } from 'prop-types'
