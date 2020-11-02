@@ -43,7 +43,7 @@ export const CardTag = styled.div.attrs((props) => ({}))`
   border-radius: 5rem;
   padding: 0.2rem 1rem;
   margin-left: 0.5rem;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   background-color: #fcfcfc;
   transition: all 0.24s ease-out;
   box-shadow: inset 0 -0.1rem 0.1rem #521a60;
@@ -135,6 +135,7 @@ export const CardBox = styled.div.attrs((props) => ({}))`
   .details {
     text-align: right;
     font-size: 1rem;
+    position: relative;
     text-transform: uppercase;
     color: #904697;
     font-weight: bold;
@@ -144,6 +145,7 @@ export const CardBox = styled.div.attrs((props) => ({}))`
     ${(props) => props.isHover && `transform: translateZ(5rem);`}
 
     svg {
+      top: -0.2rem;
       opacity: 0;
       font-size: 2.1rem;
       position: absolute;
