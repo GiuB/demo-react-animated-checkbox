@@ -77,7 +77,7 @@ const Card = () => {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Mauris varius lectus ac enim venenatis dignissim.
                     </p>
-                    <div class="clearfix" />
+                    <div className="clearfix" />
                   </div>
                   <div className="details">
                     Details{' '}
