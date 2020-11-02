@@ -41,12 +41,23 @@ export const CardInner = styled.div.attrs((props) => ({}))`
 export const CardTag = styled.div.attrs((props) => ({}))`
   color: white;
   border-radius: 5rem;
-  margin-left: 1.5rem;
-  padding: 0.35rem 1.5rem;
+  padding: 0.2rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.5rem;
   background-color: #fcfcfc;
   transition: all 0.24s ease-out;
   box-shadow: inset 0 -0.1rem 0.1rem #521a60;
   background: linear-gradient(to right, #ba72b8, #ab65bc);
+
+  @media (min-width: 60rem) {
+    margin-left: 1.5rem;
+    padding: 0.35rem 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &:hover {
     box-shadow: inset 0 0.1rem 0.2rem #521a60;
@@ -60,10 +71,11 @@ export const CardBox = styled.div.attrs((props) => ({}))`
     props.imgCol &&
     `
     max-width: 15rem;
+    min-width: 10rem;
     position: relative;
 
     img {
-      z-index: 2;
+      z-index: 15;
       position: relative;
       transition: all .3s ease-out;
 
@@ -77,11 +89,12 @@ export const CardBox = styled.div.attrs((props) => ({}))`
       bottom: 1rem;
       z-index: 1;
       content: "";
-      width: 14rem;
-      height: 14rem;
+      width: 15rem;
+      max-width: 100%;
       border-radius: 50%;
       position: absolute;
-      margin-left: 0.25rem;
+      padding-bottom: 100%;
+      // margin-left: 0.25rem;
       background: linear-gradient(333deg, #ba72b8 0%, #ab65bc 100%);
     }
   `}
@@ -114,6 +127,8 @@ export const CardBox = styled.div.attrs((props) => ({}))`
       line-height: 1.3em;
       margin: 2rem 0 1rem;
       text-align: justify;
+      max-width: 30rem;
+      float: right;
     }
   }
 

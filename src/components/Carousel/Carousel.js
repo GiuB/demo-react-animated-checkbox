@@ -39,12 +39,12 @@ const Carousel = (props, ref) => {
     threshold: 5,
     slidesPerGroup: 1,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
 
     breakpoints: {
-      992: {
+      640: {
         // slidesPerGroup: 2,
         slidesPerView: 2,
       },

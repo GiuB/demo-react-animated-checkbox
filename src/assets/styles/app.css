@@ -65,3 +65,9 @@ body {
   font-family: 'Nunito Sans';
   font-size: 1.6rem;
 }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}

@@ -14,7 +14,7 @@ export default function Credits(props) {
     <C.CreditsWrapper>
       <h1>Demo React Swiper Carousel with 3d effect</h1>
       <sub style={{ color: 'red', fontStyle: 'italic' }}>
-        Give it a try with a desktop >= 992px
+        Give it a try with a desktop >= 640px
       </sub>
       <br />
       <br />

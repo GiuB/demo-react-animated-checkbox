@@ -6,6 +6,7 @@ import theme from '../../assets/theme'
 export const CarouselWrapper = styled.div.attrs((props) => ({}))`
   position: relative;
   margin-bottom: 5rem;
+  padding: 0.5rem;
 
   .swiper-container {
     width: 100%;
@@ -22,6 +23,10 @@ export const CarouselWrapper = styled.div.attrs((props) => ({}))`
     transition-property: transform;
     transform-origin: center center;
     width: 50%;
+
+    &.swiper-slide-visible {
+      z-index: 1;
+    }
 
     &:not(.swiper-slide-visible) {
       transform: scale(0.8) translateX(-6rem);
