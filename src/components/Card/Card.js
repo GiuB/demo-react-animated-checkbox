@@ -25,7 +25,11 @@ const Card = () => {
   }, [])
 
   function handleMouseMove(e) {
-    !state.isHover && setState({ ...state, isHover: true })
+    if (!state.isHover) {
+      setState({ ...state, isHover: true })
+      if (refRotateWrapper?.current?.style)
+        refRotateWrapper.current.style.transition = 'none'
+    }
     const elDimensions = refWrapper.current?.getBoundingClientRect().toJSON()
 
     const newX =
