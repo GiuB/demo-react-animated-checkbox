@@ -28,11 +28,11 @@ export default function Credits(props) {
       </p>
       <p>
         FullScreen Demo:{' '}
-        <a href="https://7e5tx.csb.app/">https://7e5tx.csb.app/</a>
+        <a href="https://2zogt.csb.app/">https://2zogt.csb.app/</a>
         <br />
         Playgorund:{' '}
-        <a href="https://codesandbox.io/s/serverless-voice-7e5tx">
-          https://codesandbox.io/s/serverless-voice-7e5tx
+        <a href="https://codesandbox.io/s/young-smoke-2zogt">
+          https://codesandbox.io/s/young-smoke-2zogt
         </a>
         <br />
         Source code:{' '}
