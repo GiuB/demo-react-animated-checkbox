@@ -1,4 +1,4 @@
-## Demo Swiper react carousel with 3d hover effect
+## Demo React animated checkbox
 
 CodeSandbox: [Demo link]()
 
