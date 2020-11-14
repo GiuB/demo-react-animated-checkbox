@@ -1,6 +1,4 @@
-import Card from './Card'
+import Checkbox from './Checkbox'
 import Credits from './Credits'
-import Carousel from './Carousel'
-import CarouselWrapper from './CarouselWrapper'
 
-export { Card, Credits, Carousel, CarouselWrapper }
+export { Checkbox, Credits }

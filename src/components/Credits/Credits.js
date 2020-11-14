@@ -12,9 +12,9 @@ import Me from '../../assets/img/me.jpeg'
 export default function Credits(props) {
   return (
     <C.CreditsWrapper>
-      <h1>Demo React Swiper Carousel with 3d hover effect</h1>
-      <sub style={{ color: 'red', fontStyle: 'italic' }}>
-        Give it a try with a desktop >= 640px
+      <h1>Demo React Animated Checkbox</h1>
+      <sub style={{ color: 'green' }}>
+        How a checkbox should me in my perspective 🤓
       </sub>
       <br />
       <br />
